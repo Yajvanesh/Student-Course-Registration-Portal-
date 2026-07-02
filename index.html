@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Course Registration Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>ABC Training Institute</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="registration.html">Registration</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Registration Form -->
+    <div class="container">
+
+        <div class="card">
+
+            <h2>Student Registration Form</h2>
+
+            <form id="registrationForm">
+
+                <label>Full Name</label>
+                <input type="text" id="name"> <br> <br>
+
+                <label>Email</label>
+                <input type="email" id="email"> <br> <br>
+
+                <label>Mobile Number</label>
+                <input type="text" id="mobile"> <br> <br>   
+
+                <label>Gender:</label>
+                <div class="radio-group">
+                    <input type="radio" name="gender" value="Male"> Male
+                    <input type="radio" name="gender" value="Female"> Female
+                </div> <br> <br>
+
+                <label>Department</label>
+                <input type="text" id="department">  <br> <br>
+
+                <label>Course</label>
+                <select id="course">
+                    <option value="">Select Course</option>
+                    <option>Web Development</option>
+                    <option>Python</option>
+                    <option>Java</option>
+                    <option>Artificial Intelligence</option>
+                    <option>Data Science</option>
+                </select> <br> <br>
+
+                <label>Skills:</label>
+                
+                <div class="checkbox-group">
+                    <input type="checkbox" value="HTML"> HTML
+                    <input type="checkbox" value="CSS"> CSS
+                    <input type="checkbox" value="JavaScript"> JavaScript
+                    <input type="checkbox" value="Python"> Python
+                </div>
+                <br> <br>
+
+                <label>Date of Birth</label>
+                <input type="date" id="dob"> <br> <br>
+
+                <label>Address</label>
+                <textarea id="address" rows="4"></textarea> <br> <br>
+
+                <div class="buttons">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <!-- Registered Students -->
+    <div class="table-container">
+
+        <h2>Registered Students</h2>
+
+        <table id="studentTable">
+
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Mobile</th>
+                    <th>Gender</th>
+                    <th>Department</th>
+                    <th>Course</th>
+                    <th>Skills</th>
+                    <th>DOB</th>
+                    <th>Address</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 ABC Training Institute | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
